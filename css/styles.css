@@ -72,10 +72,6 @@ height: 45px;
 width: 45px;
 }
 
-.d-none {
-    display: none;
-}
-
 .center {
     margin: 0 auto;
 }
@@ -119,4 +115,12 @@ width: 45px;
     background-color: white;
     border: solid 3px black;
     border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+
+.d-none {
+    display: none;
 }
