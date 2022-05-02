@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorecard</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <p id="holeNum"></p>
+        <div class="header-side">
+            <p id="holePar"></p>
+            <p id="holeYds"></p>
+        </div>   
+    </header>
+
+    <main>
+        <!--Main View-->
+        <div class="player">
+            <div class="left">
+                <h2>Player 1</h2>
+                <p id="totalP1"></p>
+            </div>
+            <div class="right">
+                <button onclick="minus(1)"><img src="images/minus.jpg"/></button>
+                <p id="scoreP1"></p>
+                <button onclick="plus(1)"><img src="images/plus.jpg"/></button>
+            </div>
+        </div>
+
+        <div class="player">
+            <div class="left">
+                <h2>Player 2</h2>
+                <p id="totalP2"></p>
+            </div>
+            <div class="right">
+                <button onclick="minus(2)"><img src="images/minus.jpg"/></button>
+                <p id="scoreP2"></p>
+                <button onclick="plus(2)"><img src="images/plus.jpg"/></button>
+            </div>
+        </div>
+
+        <!--Final View-->
+        <div class="player d-none">
+            <div class="left">
+                <h2>Player 1</h2>
+                <p id="totalFP1"></p>
+            </div>
+            <div class="right">
+                <p id="finalScoreP1"></p>
+            </div>
+        </div>
+
+        <div class="player d-none">
+            <div class="left">
+                <h2>Player 2</h2>
+                <p id="totalFP2"></p>
+            </div>
+            <div class="right">
+                <p id="finalScoreP2"></p>
+            </div>
+        </div>
+
+        <button class="button" id="finalButton" onclick="nextHole()">Next Hole</button>
+        <a class="d-none button" id="playAgain" href="index.html">Play Again?</a>
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
